@@ -1,7 +1,5 @@
-ARG ELK_VERSION
-
 # https://www.docker.elastic.co/
-FROM docker.elastic.co/logstash/logstash:${ELK_VERSION}
+FROM docker.elastic.co/logstash/logstash:7.14.2
 RUN logstash-plugin install logstash-input-redis
 RUN logstash-plugin install logstash-input-syslog
 RUN logstash-plugin install logstash-input-tcp
