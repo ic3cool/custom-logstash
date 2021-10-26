@@ -17,3 +17,4 @@ RUN logstash-plugin install logstash-output-stdout
 RUN logstash-plugin install logstash-output-tcp
 RUN logstash-plugin install logstash-output-udp
 RUN logstash-plugin install logstash-output-loki
+RUN logstash-plugin install logstash-codec-fluent
